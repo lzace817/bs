@@ -1,8 +1,10 @@
-# the wonderfull stability of intel syntax on gnu assembler
+# bs examples
 
-it interprets a constant in a different way depending on the relative position of the constant definition.
+## bs.asm
 
-## quick start
+It interprets a constant in a different way depending on the relative position to the constant definition.
+
+### quick start
 ``` bash
 as -msyntax=intel -mnaked-reg bs.asm -o bs.o && objdump -d bs.o
 ```
@@ -19,3 +21,16 @@ as -msyntax=intel -mnaked-reg bs.asm -o bs.o && objdump -d bs.o
 ```
 
 Exactly the same code producing different results.
+
+## arduino-compiler.ino
+
+meaninless compiler messages & errors that makes no sense on arduino compiler stack.
+
+### quick start
+- compile as is and get a error
+- coment/uncomment as described in the comments and recompile
+
+error message:
+```
+error: variable or field 'foo' declared void
+```
